@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <!-- Les metas -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <!-- Polices d'ecriture Garamond Roboto Raleway -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+   <!-- Font Awesome pour les icones -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+   <!-- bootstrap css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- bootstrap icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+   <!-- Animation AOS  -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- style css -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- favicon pour l'icone du navigateur  -->
+   <link rel="icon" href="images/dev_icon.ico" type="image/x-icon">
+
+   <title>My Portfolio</title>
+</head>
+
+<body>
+   <header id="header" class="header dark-background d-flex flex-column">
+      <!-- icon menu bars -->
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+         <img src="images/img_profile.jpg" alt="" class="img-fluid rounded-circle">
+         <a href="/" class="link d-flex align-items-center justify-content-center">
+            <!-- <img src="images/mon_logo.png" alt=""> -->
+            <h1 class="name_mobile ">Moussa Thiam</h1>
+         </a>
+      </div>
+
+      <nav class="nav">
+         <a href="/">
+            <img src="images/mon_logo.png" class="logo active" alt="Mon logo">
+         </a>
+
+         <ul>
+            <li>
+               <a href="#about" class="about-link">
+                  <i class="fa fa-user navIcon" aria-hidden="true" data-icon="fa-user"></i>
+                  A Propos
+               </a>
+            </li>
+            <li>
+               <a href="#portfolio" class="portfolio-link">
+                  <i class="fa fa-address-book navIcon" aria-hidden="true" data-icon="fa-address-book"></i>
+                  Portfolio
+               </a>
+            </li>
+            <li>
+               <a href="#contact" class="contact-link">
+                  <i class="fa fa-phone navIcon" aria-hidden="true" data-icon="fa-phone"></i>
+                  Contact
+               </a>
+            </li>
+         </ul>
+
+         <div class="search">
+            <form class="form">
+               <input type="text" name="search" id="search_input" placeholder="Rechercher...">
+               <button type="submit" class="button_search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+               </button>
+            </form>
+         </div>
+
+      </nav>
+
+      <div class="content_presentation" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+         <p class="content_para">
+            Je suis
+            <span class="my_name">Moussa Thiam</span>
+            <br>
+            <span class="typed" data-typed-items="Développeur web, Infographe"
+               aria-label="Développeur web, Infographe"></span>
+         </p>
+         <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+   </header>
+
+   <section class="section">
+
+      <div class="hero">
+         <img src="images/img_profile.jpg" alt="" data-aos="fade-in" class="aos-init aos-animate">
+         <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <h2>Moussa Thiam</h2>
+            <p>I'm
+               <span class="typed" data-typed-items="web Developer, Designer">
+                  Web Developer
+               </span>
+            </p>
+         </div>
+      </div>
+
+      <div class="container-fluid about">
+         <h3 class="title" id="about">A Propos</h3>
+         <p class="about_content" data-aos="zoom-in-down" data-aos-delay="600" data-aos-duration="1000">
+            Bonjour bienvenue sur mon portfolio ! Je suis un élève ingénieur logiciel à l'école de formation NIIT de
+            DAKAR basé au Sénégal.
+            Avec une solide expérience en développement web, ainsi qu'une connaissance en sécurité des applications,
+            je me consacre à créer des solutions logicielles sécurisées et performantes pour répondre aux besoins
+            uniques de mes clients.Ce qui me motive,
+            c'est le défi de <span class="span">transformer des idées en applications fonctionnelles et
+               impactantes</span> tout en assurant leur sécurité
+            et leur performance. Je crois fermement en la puissance de la collaboration, l'attention méticuleuse aux
+            détails et un engagement inébranlable
+            envers la qualité du code et la sécurité. N'hésitez pas à explorer mon portfolio pour découvrir certains des
+            projets sur lesquels j'ai travaillé,
+            et n'hésitez pas à me <span class="span"><a href="#contact">contacter</a></span> si vous souhaitez
+            collaborer !
+         </p>
+         <div class="my_resume" data-aos="zoom-in-down" data-aos-delay="700" data-aos-duration="1000">
+            <!-- <a href="assets/cv_moussa_thiam.pdf" target="_blank">Voir mon CV</a> -->
+            <a href="assets/mon_cv.html" target="_blank">Voir mon CV</a>
+         </div>
+      </div>
+
+      <div class="skills">
+         <h3 class="title">Compétences</h3>
+         <div class="container">
+            <div class="row">
+
+               <!-- Carte 1 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="500">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/html5.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">HTML</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 2 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/css-3.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">CSS</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 60%;">60%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 3 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1500">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/javascript.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">JavaScript</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <!-- <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div> -->
+                                 <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35"
+                                    aria-valuemin="0" aria-valuemax="100">35%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 4 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2000">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/python.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">Python</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45"
+                                    aria-valuemin="0" aria-valuemax="100">45%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 5 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="2500">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/java.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">Java</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 6 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="3000">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/mysql.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">MySQL</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35"
+                                    aria-valuemin="0" aria-valuemax="100">35%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 7 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="2000">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/django.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">Django</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100">40%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carte 8 -->
+               <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                  <div class="flip-card" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="3000">
+                     <div class="flip-card-inner">
+
+                        <div class="flip-card-front card">
+                           <img src="images/bootstrap.png" class="card-img-top" alt="Logo HTML">
+                           <div class="card-body">
+                              <p class="card-text">Bootstrap</p>
+                           </div>
+                        </div>
+
+                        <div class="flip-card-back card">
+                           <div class="box-content">
+                              <h4 class="title_progress">Progression</h4>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+
+      <div class="experience">
+         <h3 class="title">Expérience</h3>
+         <div class="exp_content" data-count="2020">
+            <h2 class="poste_title" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Poste occupé 1
+            </h2>
+            <p class="poste_description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+            </p>
+         </div>
+         <div class="exp_content" data-count="2021">
+            <h2 class="poste_title" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">Poste occupé 2
+            </h2>
+            <p class="poste_description" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="3000">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima dicta optio corporis eum vel
+               animi earum eaque iusto quasi, voluptatibus aperiam quae! Corporis hic fuga, cupiditate dolorum rem nam!
+            </p>
+         </div>
+      </div>
+
+      <div class="portfolio">
+         <h3 class="title" id="portfolio">Port<span>folio</span></h3>
+         <div class="row">
+
+            <!-- col 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="card1">
+                  <div class="portfolio_card">
+                     <a href="#" target="_blank">
+                        <div class="img-wrapper">
+                           <img src="images/img_profile1.jpg" alt="Projet restaurant" class="project-img">
+                        </div>
+                        <h3>Site Web pour un restaurant</h3>
+                     </a>
+                     <p class="status in-progress">
+                        <span class="dot"></span>
+                        En cours de développement...
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- col 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="card1">
+                  <div class="portfolio_card">
+                     <a href="#" target="_blank">
+                        <div class="img-wrapper">
+                           <img src="images/img_profile1.jpg" alt="Projet restaurant" class="project-img">
+                        </div>
+                        <h3>Site Web pour un restaurant</h3>
+                     </a>
+                     <p class="status in-progress">
+                        <span class="dot"></span>
+                        En cours de développement...
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- col 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="card1">
+                  <div class="portfolio_card">
+                     <a href="#" target="_blank">
+                        <div class="img-wrapper">
+                           <img src="images/img_profile1.jpg" alt="Projet restaurant" class="project-img">
+                        </div>
+                        <h3>Site Web pour un restaurant</h3>
+                     </a>
+                     <p class="status in-progress">
+                        <span class="dot"></span>
+                        En cours de développement...
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- col 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+               <div class="card1">
+                  <div class="portfolio_card">
+                     <a href="#" target="_blank">
+                        <div class="img-wrapper">
+                           <img src="images/img_profile1.jpg" alt="Projet restaurant" class="project-img">
+                        </div>
+                        <h3>Site Web pour un restaurant</h3>
+                     </a>
+                     <p class="status in-progress">
+                        <span class="dot"></span>
+                        En cours de développement...
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="contact">
+         <div class="contact_title">
+            <h3 class="title" id="contact">Contactez <span>Moi</span></h3>
+         </div>
+
+         <div class="container contact_section">
+            <div class="row form_row">
+               <div class="col-md-5">
+                  <div class="contact_info">
+                     <div class="info_item">
+                        <i class="fa fa-map-marker" aria-hidden="true" data-aos="fade-up" data-aos-delay="50"
+                           data-aos-duration="1000"></i>
+                        <div class="info_text" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                           <h3>Adresse :</h3>
+                           <p>Dieuppeul Derklé, Dakar, Sénégal</p>
+                        </div>
+                     </div>
+                     <div class="info_item">
+                        <i class="fa fa-phone" aria-hidden="true" data-aos="fade-down" data-aos-delay="100"
+                           data-aos-duration="1000"></i>
+                        <div class="info_text" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                           <h3>Téléphone :</h3>
+                           <p>+221 77 622 34 98</p>
+                        </div>
+                     </div>
+                     <div class="info_item">
+                        <i class="fa fa-envelope" aria-hidden="true" data-aos="fade-down" data-aos-delay="300"
+                           data-aos-duration="1000"></i>
+                        <div class="info_text" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                           <h3>Email :</h3>
+                           <p>moussa622@outlook.com</p>
+                        </div>
+                     </div>
+                     <div class="card_map">
+                        <div class="info_item">
+                           <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7717.517533490149!2d-17.455424000000008!3d14.726226099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1737999043423!5m2!1sfr!2ssn"
+                              width="100%" height="270px" style="border:0;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <form action="http://localhost:3000/send-email" method="POST" id="contactForm" class="contact_form">
+                     <div class="row form_row">
+                        <div class="col-md-6">
+                           <label_form_contact for="name" class="label_form_contact">
+                              Nom
+                           </label_form_contact>
+                           <input type="text" class="form-control" name="name" id="name" required=""
+                              placeholder="Moussa Thiam">
+                        </div>
+                        <div class="col-md-6">
+                           <label_form_contact for="email" class="label_form_contact">
+                              Email
+                           </label_form_contact>
+                           <input type="email" class="form-control" name="email" id="email" required=""
+                              placeholder="moussa622@outlook.com">
+                        </div>
+                        <div class="col-md-12">
+                           <label_form_contact for="subject" class="label_form_contact">
+                              Sujet
+                           </label_form_contact>
+                           <input type="text" class="form-control" name="subject" id="subject" required=""
+                              placeholder="Votre Sujet">
+                        </div>
+                        <div class="col-md-12">
+                           <label_form_contact for="message" class="label_form_contact">
+                              Message
+                           </label_form_contact>
+                           <textarea class="form-control" name="message" rows="10" id="message" required=""
+                              placeholder="Votre message"></textarea>
+                        </div>
+                        <div class="col-md-12 btn_send">
+                           <button type="submit">Envoyer votre message</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <div class="social_contact">
+               <a href="https://wa.me/+221776223498" title="Logo WhatsApp" class="social_whatsapp" target="_blank">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  <!-- https://www.linkedin.com/in/moussa-thiam622/-->
+
+               </a>
+               <a href=" https://www.linkedin.com/in/moussa-thiam622?text=Bonjour%2C%20merci%20de%20me%20contacter%20depuis%20mon%20portfolio "
+                  title="Logo LinkedIn" class="social_linkedin" target="_blank">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+               </a>
+               <a href="https://github.com/moussa221" title="Logo Github" class="social_github" target="_blank">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="copyright">
+            <p>
+               Copyright © <span id="year"></span>.<strong class="px-1 sitename">Mon Portfolio.</strong>
+               <span>Tous droits réservés</span>
+            </p>
+         </div>
+         <div class="designed">
+            Designed par
+            <a href="/">Moussa Thiam</a>
+         </div>
+      </div>
+   </footer>
+
+   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
+      <i class="bi bi-arrow-up-short"></i>
+   </a>
+
+   <div id="alertPopup" class="alert-popup">Action bloquée 🔒</div>
+
+   <!-- jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+   <!-- script animation aos -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <!-- Script typed js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+   <script src="app.js"></script>
+
+</body>
+
+</html>

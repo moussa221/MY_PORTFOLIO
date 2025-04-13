@@ -60,7 +60,6 @@ html {
     width: 100%;
     height: 100%;
     padding: 20px 50px;
-    /* overflow: hidden; */
     transition: all ease-in-out 0.3s;
     overflow-y: auto;
     z-index: 997;
@@ -315,7 +314,6 @@ input:focus {
 .title::before {
     content: "";
     position: absolute;
-    /* top: 78%; */
     bottom: -17%;
     left: 15px;
     width: 50px;
@@ -369,7 +367,6 @@ input:focus {
 /* Star card skill content */
 
 .flip-card {
-    /* background-color: transparent; */
     width: 100%;
     max-width: 250px;
     height: 300px;
@@ -443,7 +440,6 @@ input:focus {
 }
 
 .progress {
-    /* width: 100%; */
     margin: 0 auto;
     height: 20px;
     background-color: #fff;
@@ -465,9 +461,6 @@ input:focus {
 .exp_content {
     color: #FFF;
     max-width: 600px;
-    /* margin-left: 30%; */
-    /* margin: 0 auto;  */
-    /* margin-top: -2px; */
     margin: -2px auto 0 auto;
     padding: 0 0 20px 20px;
     border-left: 3px solid #ffffff;
@@ -511,7 +504,6 @@ input:focus {
     border: 1px solid #ffc86b;
 }
 
-/* Styles portfolio  #3d3e42*/
 .portfolio {
     background: #2C3E50;
 }
@@ -538,7 +530,6 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 20px; */
 }
 
 .project-img {
@@ -795,11 +786,6 @@ input:focus {
         padding: 10px;
     }
 
-    /* .exp_content {
-        margin: 0 auto !important;
-    } */
-
-
 }
 
 /* Pour les écrans ayant une largeur de 1200 px ou plus (écrans d'ordinateurs larges, grands laptops, et desktops). */
@@ -874,7 +860,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
     .content_presentation,
     .content_para {
         font-size: 35px;
-        /* line-height: 1; */
     }
 
     .about .title {
@@ -898,7 +883,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
 
     .exp_content::after {
         background: #006da4;
-        /* font-size: 13px; */
     }
 
     .exp_content::before {
@@ -985,7 +969,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
         width: 50%;
         left: -100%;
         transition: left 0.3s ease;
-        /* z-index: 9999; */
     }
 
     .nav ul {
@@ -1090,7 +1073,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
 
     .exp_content {
         max-width: 450px;
-        /* margin-left: 80px; */
         border-left: 2px solid #ffffff;
     }
 
@@ -1132,13 +1114,8 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
         width: 100%;
     }
 
-    /* .card .card-text {
-        font-size: 18px;
-    } */
-
     .exp_content {
         max-width: 350px;
-        /* margin-left: 60px; */
     }
 
     .exp_content::after {
@@ -1156,7 +1133,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
     }
 
     .exp_content {
-        /* max-width: 300px; */
         margin-left: 40px;
     }
 
@@ -1218,11 +1194,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
 
     .my_resume {
         padding: 20px;
-    }
-
-    .exp_content {
-        /* margin-left: 30px; */
-        /* max-width: 260px; */
     }
 
     .exp_content::after {
@@ -1350,8 +1321,6 @@ les tablettes et petits écrans. Sur un écran de plus de 1199px → Ce code ne 
         justify-content: center;
         align-items: center;
         gap: 6px;
-        /* espace entre les éléments */
         flex-wrap: wrap;
-        /* ou nowrap si tu veux forcer tout sur une ligne */
     }
 }

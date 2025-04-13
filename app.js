@@ -1,4 +1,3 @@
-/*
 // Désactive le clic droit sur toute la page
 document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
@@ -52,7 +51,7 @@ document.addEventListener("keydown", function (e) {
     showAlert("Cette action est bloquée !");
   }
 });
-*/
+
 //****************************************** */
 
 // changer dynamiquement l’élément actif
@@ -209,7 +208,6 @@ window.addEventListener('load', aosInit);
 
 //******************************************************* */
 const API_URL_LOCAL = 'http://localhost:3000/send-email'; // En dev
-// const API_URL_PRODUCTION = 'https://portfolio-moussa-thiam.com/send-email';   // En prod
 const API_URL_PRODUCTION = 'https://portfolio-backend-5xnz.onrender.com/send-email'; // 👈 exemple : En prod
 
 const isLocalhost = window.location.hostname === "localhost";

@@ -1,3 +1,5 @@
+console.log("JS chargé !!!");
+
 // Désactive le clic droit sur toute la page
 document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
@@ -216,6 +218,8 @@ const API_URL = isLocalhost ? API_URL_LOCAL: API_URL_PRODUCTION;
 
 document.getElementById('contactForm').addEventListener('submit', async function (e) {
   e.preventDefault(); // Empêche le rechargement de la page
+
+  console.log("Form submitted"); // 👈 À ajouter pour tester
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;

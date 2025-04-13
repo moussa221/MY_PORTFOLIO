@@ -8,14 +8,19 @@ const app = express();
 // Configuration CORS plus sécurisée
 const corsOptions = {
   origin: [
-    'https://my-portfolio-moussa-thiams-projects.vercel.app',
+    'https://my-portfolio-moussa-thiams-projects.vercel.app/',
     'http://localhost:3000'
   ],
   methods: ['POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
+  allowedHeaders: ['Content-Type'],
+  credentials: true,
+  optionsSuccessStatus: 200 // Pour les requêtes OPTIONS
 };
 
 app.use(cors(corsOptions));
+
+// Middleware pour les requêtes OPTIONS (pré-vol)
+app.options('*', cors(corsOptions));
 
 app.use(express.json());
 
@@ -57,7 +62,6 @@ app.post('/send-email', async (req, res) => {
     });
 
     res.status(200).json({ success: true, message: 'Message envoyé avec succès !' });
-
   } catch (error) {
     console.error('Erreur d\'envoi:', error);
     res.status(500).json({ 

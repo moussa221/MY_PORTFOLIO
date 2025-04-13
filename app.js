@@ -1,5 +1,6 @@
 console.log("JS chargé !!!");
 
+/*
 // Désactive le clic droit sur toute la page
 document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
@@ -53,6 +54,7 @@ document.addEventListener("keydown", function (e) {
     showAlert("Cette action est bloquée !");
   }
 });
+*/
 
 //****************************************** */
 

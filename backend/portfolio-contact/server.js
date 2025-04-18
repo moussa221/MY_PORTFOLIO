@@ -8,7 +8,7 @@ const app = express();
 // Configuration CORS plus sécurisée
 const corsOptions = {
   origin: [
-    'https://my-portfolio-moussa-thiams-projects.vercel.app/',
+    'https://my-portfolio-moussa-thiams-projects.vercel.app',
     'http://localhost:3000'
   ],
   methods: ['POST', 'OPTIONS'],
@@ -20,7 +20,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Middleware pour les requêtes OPTIONS (pré-vol)
-app.options('*', cors(corsOptions));
+app.options(/(.*)/, cors(corsOptions));
 
 app.use(express.json());
 
@@ -49,10 +49,10 @@ app.post('/send-email', async (req, res) => {
     await transporter.sendMail({
       from: email,
       to: process.env.EMAIL_USER,
-      subject: `[PORTFOLIO] ${subject}`,
+      subject: `[PORTFOLIO] :${subject}`,
       text: `De: ${name}\nEmail: ${email}\n\n${message}`,
       html: `
-        <h2>Nouveau message depuis votre portfolio</h2>
+        <h2>Nouveau message depuis mon portfolio</h2>
         <p><strong>De:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Sujet:</strong> ${subject}</p>
